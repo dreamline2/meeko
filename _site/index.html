@@ -1,0 +1,483 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CYCU">
+    <meta name="author" content="wilson">
+    <meta name="keywords" content="CYCUS">
+
+    <title>樁載重資料庫網頁平台系統</title>
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="static/css/carousel.css" rel="stylesheet">
+    <style type="text/css">
+        #upload{
+            //display: none;
+        }
+        .glyphicon-tree-deciduous{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<!-- NAVBAR================================================== -->
+<!-- 這是註解 -->
+<body style="">
+
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!--span class="glyphicon glyphicon-tree-deciduous"></span-->
+                        <a class="navbar-brand" href="#">PWEB-BASED SYSTEM</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a>
+                            </li>
+                            <li><a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Query  <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Based on loading type</a>
+                                    </li>
+                                    <li><a href="#">Based on soil type</a>
+                                    </li>
+                                    <li><a href="#">Based on capacity range</a>
+                                    </li>
+                                    <li><a href="#">Based on country</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Other  <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <input type="file" id="upload">
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Select language</li>
+                                    <li><a href="#">Taiwan</a>
+                                    </li>
+                                    <li><a href="#">English</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <img src="static/imgs/CYCU4.jpg" width="100%" height="100%" alt="">
+                    <div class="carousel-caption">
+                        <h1>WEB-BASED SYSTEM for Pile Load Tests</h1>
+                        <p>The system contains a large number of case histories of axial drilled shast load tests from around the world. Information includes construction methed, pile geometry, soil investigation data, static load test results, and case-based drilled shast data. The system enables browsing, querying and collecting data.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>meeko</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>wilson</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="http://ih2.redbubble.net/image.12976293.7979/fc,140x140,white.jpg">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a>
+                </p>
+
+                <a class="" href="http://www.google.com">email me</a>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="http://ih2.redbubble.net/image.12976293.7979/fc,140x140,white.jpg">
+                <h2>Heading</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="http://ih2.redbubble.net/image.12976293.7979/fc,140x140,white.jpg">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details »</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading.
+                    <span class="text-muted">It'll blow your mind.</span>
+                </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="http://thegoetia5.files.wordpress.com/2012/07/024-seal-of-naberius-q100-500x500.jpg">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="http://thegoetia5.files.wordpress.com/2012/07/024-seal-of-naberius-q100-500x500.jpg">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Oh yeah, it's that good.
+                    <span class="text-muted">See for yourself.</span>
+                </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">And lastly, this one.
+                    <span class="text-muted">Checkmate.</span>
+                </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="http://thegoetia5.files.wordpress.com/2012/07/024-seal-of-naberius-q100-500x500.jpg">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        
+        <h1>Database Introduction</h1>
+        <p>Information on drilled shafts was collected from different journals, literature, and load tests reports at various sites worldwide.Data is divided into seven categories:</p>
+
+        <ol>
+            <li>Site Data</li>
+            <li>Soil Characteristics</li>
+            <li>Shaft Information</li>
+            <li>Design parameters</li>
+            <li>Interpreted Capacity</li>
+            <li>Shaft displacement</li>
+            <li>Reference</li>
+        </ol>
+
+        <p>The system also include the original load-displacement curves. The numbers of different loading type and soil type are shown in the table:</p>
+        <table class="table table-striped" width="269" border="1" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <thead>
+                <tr>
+                    <th width="106" height="35" class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">Loading type</span>
+                        </div>
+                    </th>
+                    <th width="80" class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">Soil type</span>
+                        </div>
+                    </th>
+                    <th width="75" class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">Data</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" class="style13">
+                        <div align="center" class="style28">Compression</div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">Drained</div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">115</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">Undrained</div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">116</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">Gravel</div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">41</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">Uplift</span>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">Drained</div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">65</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center" class="style14">
+                                <div align="center">Undrained</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">55</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">Gravel</div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">49</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">total</div>
+                        </div>
+                    </td>                    
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <div align="center">
+                                <span class="style13"></span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="style13">
+                        <div align="center" class="style28">
+                            <span class="style13">441</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="featurette-divider">
+
+        <h1>Data Information</h1>
+        <table class="table table-striped" width="853" border="1" align="center" cellpadding="2" cellspacing="1">
+            <tbody>
+                <!--tr>
+                    <th colspan="2" scope="col">
+                        <span class="style2">Data Information</span>
+                    </th>
+                </tr-->
+                <tr>
+                    <td width="217">1. Shaft No.</td>
+                    <td width="619">first letter show the soil type, D: Drained, U: Undrained;
+                        <span id="result_box" lang="en" xml:lang="en">second</span>letter shows the loading type, C: Compression, U: Uplift</td>
+                </tr>
+                <tr>
+                    <td>2. Depth, D(m)</td>
+                    <td>shaft depth (m)</td>
+                </tr>
+                <tr>
+                    <td>3. Dia, B(m)</td>
+                    <td>shaft d
+                        <span id="result_box" lang="en" xml:lang="en">iameter</span>(m)</td>
+                </tr>
+                <tr>
+                    <td>4. Friction Angle-TC</td>
+                    <td>
+                        <span id="result_box" lang="en" xml:lang="en">triaxial compression test friction angle</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5. s<sub>u</sub> (CIUC)</td>
+                    <td>consolidated-isotropically undrained triaxial compression test
+                        <span id="result_box" lang="en" xml:lang="en">undrained shear strength</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6. alpha (CIUC)</td>
+                    <td>back-
+                        <span id="result_box" lang="en" xml:lang="en">calculated s<sub>u</sub> value from CIUC test and L<sub>2</sub> capacity</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7. Measured Beta</td>
+                    <td>back-
+                        <span id="result_box" lang="en" xml:lang="en">calculated β value from L<sub>2</sub> capacity</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8. capacity</td>
+                    <td>capacity from various interpretation criteria</td>
+                </tr>
+                <tr>
+                    <td>9. displacement</td>
+                    <td>interpreted displacement</td>
+                </tr>
+                <tr>
+                    <td>10. k/ko</td>
+                    <td>stress factor</td>
+                </tr>
+                <tr>
+                    <td>11. LL</td>
+                    <td>liquid limit</td>
+                </tr>
+                <tr>
+                    <td>12. PL</td>
+                    <td>plastic limit</td>
+                </tr>
+                <tr>
+                    <td>13. SPT-N</td>
+                    <td>standard penetration test value</td>
+                </tr>
+                <tr>
+                    <td>14. Country</td>
+                    <td>country where the test was conducted</td>
+                </tr>
+                <tr>
+                    <td>15. Location</td>
+                    <td>test location</td>
+                </tr>
+                <tr>
+                    <td>16. Soil Description</td>
+                    <td>detailed soil description</td>
+                </tr>
+                <tr>
+                    <td>17. GWT (m)</td>
+                    <td>ground water table</td>
+                </tr>
+                <tr>
+                    <td>18. Load-disp. curve</td>
+                    <td>original load-displacement curve</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a>
+            </p>
+            <p>© 2013 Education, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
+            </p>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="static/js/script.js"></script>
+
+</body>
+
+</html>
