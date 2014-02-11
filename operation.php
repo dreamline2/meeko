@@ -1,3 +1,4 @@
+<?php
 "; print "樁徑 : " . $_GET["pilediameter"] . "
 "; print "土壤單位重為 : " . $_GET["soilunitweight"] . "
 "; print "土壤摩擦角為 : " . $_GET["frictionangle"] . "
@@ -38,3 +39,5 @@
 
 " ; //計算Fqr修正因子並將其設為變數$fqr $fqr = pow( M_E , ( (-3.8) * tan(deg2rad($fa))) + ( 3.07 * sin(deg2rad($fa)) ) * (log10 (2*100)) ); echo "Fqr = " . $fqr . "
 " ?>in
+
+?>
